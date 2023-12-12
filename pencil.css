@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 250px;
+    background-color: lightgray;
+}
+
+.eraser {
+    background-color: pink;
+    width: 40px;
+    height: 50px;
+    border-start-start-radius: 50%;
+    border-end-start-radius: 50%;
+    background: linear-gradient(
+        90deg,
+        pink 0%,
+        rgb(255, 160, 203) 100%
+    );
+}
+
+.ferrule {
+    background-color: gray;
+    width: 35px;
+    height: 50px;
+    background: linear-gradient(
+        90deg,
+        gray 0%,
+        rgb(99, 99, 99) 100%
+    );
+}
+
+.pencil-body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+}
+
+.slight-border {
+    border: 0.5px solid rgb(51, 45, 45);
+}
+
+.pencil-body {
+    background-color: yellow;
+    width: 300px;
+    height: 17px;
+}
+
+.pencil-body-1 {
+    background-color: rgb(228, 228, 130);
+}
+
+.pencil-body-2 {
+    background-color: rgb(228, 228, 90);
+}
+
+.pencil-body-3 {
+    background-color: rgb(228, 228, 50);
+}
+
+.brand {
+    padding-left: 5%;
+}
+
+.tip-base {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    /* border-right: 25px solid green; */
+    border-left: 50px solid orange;
+}
+
+.tip {
+    width: 0;
+    height: 0;
+    border-top: 12.5px solid transparent;
+    border-bottom: 12.5px solid transparent;
+    border-left: 25px solid black;
+    transform: translateX(-25px);
+    z-index: 1;
+}
